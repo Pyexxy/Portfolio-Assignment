@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent Kipyegon - Portfolio</title>
+    <link rel="stylesheet" href="PortfolioCss.css">
+</head>
+<body>
+    <header>
+        <h1>Vincent Kipyegon</h1>
+        <p id="typed-text">Geospatial Engineer | Data Analyst | Software Engineering Enthusiast</p>
+        <div class="contact-links">
+             | 
+            <a href="vincentkipyegon02@gmail.com">My email</a> | 
+            <a href="https://linkedin.com/in/pyexxy" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/Pyexxy" target="_blank">Github</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>Professional Summary</h2>
+        <p>A detail-oriented Geospatial Engineer with expertise in spatial analysis, remote sensing, predictive modeling, and data visualization. Passionate about climate action and urban development.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>Flood Risk Assessment</h3>
+                <p>Predictive flood model using Sentinel-1 in GEE.</p>
+            </div>
+            <div class="project-card">
+                <h3>Maize Yield Prediction</h3>
+                <p>Climate-based yield model for Trans Nzoia.</p>
+            </div>
+            <div class="project-card">
+                <h3>EV Charging Stations</h3>
+                <p>Site suitability analysis in Nairobi.</p>
+            </div>
+            <div class="project-card">
+                <h3>Urban Growth Detection</h3>
+                <p>Mjini Hackathon winner using Sentinel data.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <canvas id="skills-chart" width="300" height="300"></canvas>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <ul id="message-list"></ul>
+    </section>
+
+    <!-- Firebase CDN -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="PortfolioJavascript.js"></script>
+</body>
+</html>
